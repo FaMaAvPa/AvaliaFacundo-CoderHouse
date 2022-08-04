@@ -1,41 +1,4 @@
 
-
-*{
-    padding: 0;
-    margin: 0;
-}
-/*Header*/
-header{
-    padding: 5%;
-    background-color: #FBFFFE;
-    font-family: 'Poppins', sans-serif;;
-    display: grid;
-    grid-area: "header";
-}
-
-
-/*Declarar el area de todos los elementos*/
-body main{
-    grid-area: body;
-}
-
-.productos1{
-    display: grid;
-    grid-area: "productos1";
-}
-.productos2{
-    display: grid;
-    grid-area: "productos2";
-}
-.productos3{
-    display: grid;
-    grid-area: "productos3";
-}
-.productos4{
-    display: grid;
-    grid-area: "productos4";
-}
-
 main{
     display: grid;
     padding: 5%;
@@ -111,7 +74,7 @@ footer form{
     transition: all 500ms;
 }
 
-/*first mobile*/
+/*first mobile
 
 body{
     margin-bottom: 10%;
@@ -207,3 +170,4 @@ body{
     }
 }
 
+*/

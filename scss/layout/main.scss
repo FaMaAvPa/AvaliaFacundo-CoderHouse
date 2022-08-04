@@ -1,5 +1,6 @@
 
 main{
+    background-color: $fondoMain;
     .productosInicio{
     padding: 5%;
     img{
@@ -8,6 +9,9 @@ main{
         flex-direction: row;
     }
 }
+    p{
+        font-weight: bolds;
+    }
     .titulo{
         font-size: 95%;
     }

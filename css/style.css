@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+/*'Poppins', sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+footer {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  background-color: #6D676E; }
+  footer p {
+    font-family: "Poppins", sans-serif;
+    font-size: 85%; }
+
+header {
+  background-color: #FBFFFE; }
+
+main {
+  background-color: #cbcbcc; }
+  main .productosInicio {
+    padding: 5%; }
+    main .productosInicio img {
+      margin: 5%;
+      display: flex;
+      flex-direction: row; }
+  main p {
+    font-weight: bolds; }
+  main .titulo {
+    font-size: 95%; }
+  main .formContacto form {
+    padding: 5%;
+    width: 50%;
+    height: 50%;
+    font-size: 85%; }
+
+footer {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  background-color: #6D676E; }
+  footer p {
+    font-family: "Poppins", sans-serif;
+    font-size: 85%; }
+
+header {
+  grid-area: "header"; }
+
+.productos1 {
+  display: grid;
+  grid-area: "productos1"; }
+
+.productos2 {
+  display: grid;
+  grid-area: "productos2"; }
+
+.productos3 {
+  display: grid;
+  grid-area: "productos3"; }
+
+.productos4 {
+  display: grid;
+  grid-area: "productos4"; }
+
+body main {
+  grid-area: body; }
+
+body {
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-areas: "header" "productos1" "productos2" "productos3" "productos4" "body" "footer" "feedback"; }
+
+.cuerpo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 20px; }
+
+@media (min-width: 500px) {
+  body {
+    display: grid;
+    grid-template-areas: "header"        "header" "productos1"    "productos2" "productos3"    "productos4" "body"          "body" "feedback"      "footer"; }
+  .cuerpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    display: flex;
+    flex-direction: column; } }
+
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas: "header"        "header"        "header" "productos1"    "productos2"    "header" "productos3"    "productos4"    "body" "body"          "body"          "body"    "feedback"      "footer"        "footer"; }
+  .cuerpo img {
+    width: 200px;
+    height: 112px; }
+  .cuerpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    display: flex;
+    flex-direction: column; } }
+
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-areas: "header"        "header"        "header"        "header" "productos1"    "productos2"    "productos3"    "productos4" "body"          "body"          "body"          "body" "feedback"      "footer"        "footer"        "footer"; }
+  .cuerpo img {
+    width: 250px;
+    height: 140px; }
+  .cuerpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; } }

@@ -1,0 +1,22 @@
+header{
+    grid-area: "header";
+}
+.productos1{
+    display: grid;
+    grid-area: "productos1";
+}
+.productos2{
+    display: grid;
+    grid-area: "productos2";
+}
+.productos3{
+    display: grid;
+    grid-area: "productos3";
+}
+.productos4{
+    display: grid;
+    grid-area: "productos4";
+}
+body main{
+    grid-area: body;
+        }
