@@ -18,5 +18,6 @@ header{
     grid-area: "productos4";
 }
 body main{
-    grid-area: body;
+    display: grid;
+    grid-area: "body";
         }

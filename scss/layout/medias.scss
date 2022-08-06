@@ -1,13 +1,10 @@
+/*mobile first*/
 
 body{
     margin-bottom: 10%;
     display: grid;
     grid-template-areas: 
     "header"
-    "productos1"
-    "productos2"
-    "productos3"
-    "productos4"
     "body"
     "footer"
     "feedback";
@@ -18,8 +15,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
     gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width:500px) {
@@ -27,8 +25,6 @@ body{
         display: grid;   
         grid-template-areas: 
         "header"        "header"
-        "productos1"    "productos2"
-        "productos3"    "productos4"
         "body"          "body"
         "feedback"      "footer";
     }
@@ -49,9 +45,7 @@ body{
     body{   
         display: grid;   
         grid-template-areas: 
-        "header"        "header"        "header"
-        "productos1"    "productos2"    "header"
-        "productos3"    "productos4"    "body"
+        "header"        "header"        "header" 
         "body"          "body"          "body"   
         "feedback"      "footer"        "footer";
     }
@@ -66,8 +60,6 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;    
         gap: 20px;
-        display: flex;
-        flex-direction: column;
     }
 }
 @media (min-width:1024px) 
@@ -76,19 +68,25 @@ body{
         display: grid;   
         grid-template-areas: 
         "header"        "header"        "header"        "header"
-        "productos1"    "productos2"    "productos3"    "productos4"
         "body"          "body"          "body"          "body"
+        "productos1"    "productos2"    "productos3"    "productos4"
         "feedback"      "footer"        "footer"        "footer";
     }
-    .cuerpo img{
-        width: 250px;
-        height: 140px;
 
-    }
     .cuerpo
     {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+        img{
+            width: 250px;
+            height: 140px;
+        }
+        .productos1, .productos2, .productos3, .productos4{
+            display: flex;
+            flex-direction: row;
+
+        }
     }
+ 
 }

@@ -1,33 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
 /*'Poppins', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@1,200&display=swap");
+/*'Open Sans', sans-serif;*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-footer {
-  padding-top: 20%;
-  padding-bottom: 10%;
-  background-color: #6D676E; }
-  footer p {
-    font-family: "Poppins", sans-serif;
-    font-size: 85%; }
-
 header {
-  background-color: #FBFFFE; }
+  background-color: #757575; }
+  header .navbar {
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 95%;
+    display: flex;
+    justify-content: center; }
+    header .navbar .nav-item :hover {
+      transform: scale(1.1);
+      transition: all 500ms; }
+  header ul li a {
+    color: white; }
+  header .gris {
+    background-color: #757575; }
 
 main {
-  background-color: #cbcbcc; }
+  background-color: #FBFFFE; }
   main .productosInicio {
-    padding: 5%; }
-    main .productosInicio img {
-      margin: 5%;
-      display: flex;
-      flex-direction: row; }
+    display: flex;
+    flex-direction: row;
+    padding: 10%; }
+    main .productosInicio .productos1, main .productosInicio .productos2, main .productosInicio .productos3, main .productosInicio .productos4 {
+      margin: 5%; }
+      main .productosInicio .productos1 picture :hover, main .productosInicio .productos2 picture :hover, main .productosInicio .productos3 picture :hover, main .productosInicio .productos4 picture :hover {
+        transform: scale(1.1);
+        transition: all 500ms; }
   main p {
-    font-weight: bolds; }
+    font-size: 85%;
+    font-family: "Poppins", sans-serif;
+    padding: 2%; }
   main .titulo {
-    font-size: 95%; }
+    font-weight: bold;
+    font-size: 95%;
+    font-family: "Open Sans", sans-serif;
+    padding: 5%; }
   main .formContacto form {
     padding: 5%;
     width: 50%;
@@ -37,7 +53,7 @@ main {
 footer {
   padding-top: 20%;
   padding-bottom: 10%;
-  background-color: #6D676E; }
+  background-color: #757575; }
   footer p {
     font-family: "Poppins", sans-serif;
     font-size: 85%; }
@@ -62,24 +78,27 @@ header {
   grid-area: "productos4"; }
 
 body main {
-  grid-area: body; }
+  display: grid;
+  grid-area: "body"; }
 
+/*mobile first*/
 body {
   margin-bottom: 10%;
   display: grid;
-  grid-template-areas: "header" "productos1" "productos2" "productos3" "productos4" "body" "footer" "feedback"; }
+  grid-template-areas: "header" "body" "footer" "feedback"; }
 
 .cuerpo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  gap: 20px; }
+  gap: 20px;
+  display: flex;
+  flex-direction: column; }
 
 @media (min-width: 500px) {
   body {
     display: grid;
-    grid-template-areas: "header"        "header" "productos1"    "productos2" "productos3"    "productos4" "body"          "body" "feedback"      "footer"; }
+    grid-template-areas: "header"        "header" "body"          "body" "feedback"      "footer"; }
   .cuerpo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,7 +110,7 @@ body {
 @media (min-width: 768px) {
   body {
     display: grid;
-    grid-template-areas: "header"        "header"        "header" "productos1"    "productos2"    "header" "productos3"    "productos4"    "body" "body"          "body"          "body"    "feedback"      "footer"        "footer"; }
+    grid-template-areas: "header"        "header"        "header"  "body"          "body"          "body"    "feedback"      "footer"        "footer"; }
   .cuerpo img {
     width: 200px;
     height: 112px; }
@@ -99,18 +118,19 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    display: flex;
-    flex-direction: column; } }
+    gap: 20px; } }
 
 @media (min-width: 1024px) {
   body {
     display: grid;
-    grid-template-areas: "header"        "header"        "header"        "header" "productos1"    "productos2"    "productos3"    "productos4" "body"          "body"          "body"          "body" "feedback"      "footer"        "footer"        "footer"; }
-  .cuerpo img {
-    width: 250px;
-    height: 140px; }
+    grid-template-areas: "header"        "header"        "header"        "header" "body"          "body"          "body"          "body" "productos1"    "productos2"    "productos3"    "productos4" "feedback"      "footer"        "footer"        "footer"; }
   .cuerpo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; } }
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    .cuerpo img {
+      width: 250px;
+      height: 140px; }
+    .cuerpo .productos1, .cuerpo .productos2, .cuerpo .productos3, .cuerpo .productos4 {
+      display: flex;
+      flex-direction: row; } }

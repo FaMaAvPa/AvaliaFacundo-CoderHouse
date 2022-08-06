@@ -1,24 +1,38 @@
 
 main{
-    background-color: $fondoMain;
+    background-color: $blanco1;
     .productosInicio{
-    padding: 5%;
-    img{
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    .productos1, .productos2, .productos3, .productos4{
         margin: 5%;
-        display: flex;
-        flex-direction: row;
+        picture{
+        :hover{
+            transform: scale(1.1);
+            transition: all 500ms; 
+                }
+            }
+        }
     }
-}
+    
     p{
-        font-weight: bolds;
-    }
+        font-size: 85%;
+        font-family: $letraTextos;
+        padding: 2%;
+     }
     .titulo{
+        font-weight: bold;
         font-size: 95%;
-    }
-    .formContacto form{
+        font-family: $letraTitulos;
+        padding: 5%;
+            }
+    .formContacto{
+        form{
         padding: 5%;
         width: 50%;
         height: 50%;
         font-size: 85%;
+            }
+        }
     }
-}
