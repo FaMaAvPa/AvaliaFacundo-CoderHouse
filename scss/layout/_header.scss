@@ -1,26 +1,18 @@
 header{
     background-color: $gris;
     .navbar{
-            align-items: center;
-            justify-content: center;
             font-family: $letraTextos;
             font-size: 95%;
-            display: flex;
-            justify-content: center;
         .nav-item{
+                    a{
+                        color: white;
+                    }
 
                   :hover{
                     transform: scale(1.1);
                     transition: all 500ms; }
                         }
                  }
-        ul{
-            li{
-                a{
-                    color: white;
-                }
-            }
-        }
     .gris{
         background-color: $gris;
     } 

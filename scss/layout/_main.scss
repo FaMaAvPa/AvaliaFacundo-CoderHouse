@@ -4,7 +4,7 @@ main{
     .productosInicio{
     display: flex;
     flex-direction: row;
-    .productos1, .productos2, .productos3, .productos4{
+    .productosInicio{
         margin: 5%;
         picture{
         :hover{
@@ -25,7 +25,15 @@ main{
         font-size: 95%;
         font-family: $letraTitulos;
         padding: 5%;
+        text-align: center;
             }
+    .subtitulo
+    {
+        font-family: $letraTitulos;
+        font-weight: bold;
+        text-align: center;
+        font-size: 90%;
+    }
     .formContacto{
         form{
         padding: 5%;

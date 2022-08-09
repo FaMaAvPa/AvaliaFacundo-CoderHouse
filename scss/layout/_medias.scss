@@ -1,0 +1,48 @@
+/*mobile first*/
+
+body{
+    margin-bottom: 10%;
+}
+.cuerpo
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width:500px) {
+   
+    .cuerpo
+{
+  
+    display: flex;
+    flex-direction: column;
+}
+
+
+}
+
+@media (min-width:768px) 
+{
+        
+    .cuerpo img{
+        width: 200px;
+        height: 112px;
+
+    }
+    
+}
+@media (min-width:1024px) 
+{
+
+    .cuerpo
+    {
+       
+        img{
+            width: 250px;
+            height: 140px;
+        }
+
+    }
+ 
+}
