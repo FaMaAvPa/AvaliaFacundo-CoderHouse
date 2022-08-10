@@ -26,8 +26,8 @@ body{
 {
         
     .cuerpo img{
-        width: 200px;
-        height: 112px;
+        @include mediasMedidasImg(200px,112px);
+
 
     }
     
@@ -39,8 +39,7 @@ body{
     {
        
         img{
-            width: 250px;
-            height: 140px;
+            @include mediasMedidasImg(250px,140px);
         }
 
     }

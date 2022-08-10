@@ -1,6 +1,8 @@
-@import "./utilities/variabless";
+@import "./utilities/variables";
+@import "./utilities/mixins";
 @import "./layout/reset";
 @import "./layout/header";
 @import "./layout/main";
+@import "./utilities/extends";
 @import "./layout/footer";
 @import "./layout/medias";

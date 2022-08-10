@@ -14,42 +14,45 @@ header {
     font-size: 95%; }
     header .navbar .nav-item a {
       color: white; }
-    header .navbar .nav-item :hover {
+    header .navbar .nav-item:hover {
       transform: scale(1.1);
       transition: all 500ms; }
-  header .gris {
-    background-color: #757575; }
+    header .navbar .gris {
+      background-color: #757575; }
 
 main {
   background-color: #FBFFFE; }
   main .productosInicio {
     display: flex;
     flex-direction: row; }
-    main .productosInicio .productosInicio {
-      margin: 5%; }
-      main .productosInicio .productosInicio picture :hover {
-        transform: scale(1.1);
-        transition: all 500ms; }
+    main .productosInicio picture:hover {
+      transform: scale(1.1);
+      transition: all 500ms; }
+  main .productosOfertas picture:hover {
+    transform: scale(1.1);
+    transition: all 500ms; }
   main p {
     font-size: 85%;
     font-family: "Poppins", sans-serif;
-    padding: 2%; }
+    padding: 2px; }
   main .titulo {
-    font-weight: bold;
-    font-size: 95%;
-    font-family: "Open Sans", sans-serif;
-    padding: 5%;
     text-align: center; }
   main .subtitulo {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 90%; }
+    font-size: 95%; }
   main .formContacto form {
     padding: 5%;
     width: 50%;
     height: 50%;
     font-size: 85%; }
+
+main h1, main h2 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  padding: 5%; }
 
 footer {
   padding-top: 20%;

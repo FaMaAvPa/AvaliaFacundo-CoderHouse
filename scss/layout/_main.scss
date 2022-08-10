@@ -4,27 +4,21 @@ main{
     .productosInicio{
     display: flex;
     flex-direction: row;
-    .productosInicio{
-        margin: 5%;
         picture{
-        :hover{
-            transform: scale(1.1);
-            transition: all 500ms; 
-                }
+        @include hoverExpandir;
             }
         }
+    .productosOfertas{
+        picture{
+        @include hoverExpandir;
+        }
     }
-    
     p{
         font-size: 85%;
         font-family: $letraTextos;
-        padding: 2%;
+        padding: 2px;
      }
     .titulo{
-        font-weight: bold;
-        font-size: 95%;
-        font-family: $letraTitulos;
-        padding: 5%;
         text-align: center;
             }
     .subtitulo
@@ -32,7 +26,7 @@ main{
         font-family: $letraTitulos;
         font-weight: bold;
         text-align: center;
-        font-size: 90%;
+        font-size: 95%;
     }
     .formContacto{
         form{
