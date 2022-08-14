@@ -1,13 +1,40 @@
 
 main{
-    background-color: $blanco1;
+    background-color: $purpura;
     .productosInicio{
-    display: flex;
-    flex-direction: row;
-        picture{
+    .card{
+        width: 80%;
+        height: 60%;
+    }
+    .muestraInicio1{
+        margin-left: 10%;
+    }
+    .muestraInicio3{
+        margin-left: 10%;
+    }
+    .celesteClaro{
+        background-color: $celesteClaro;
+    }
+    picture{
         @include hoverExpandir;
             }
+
         }
+    .descripcion{
+    .textoDescriptivoInicio{
+        width: 50%;
+        margin-left: 20%;
+        background-color: $azul;
+        margin-bottom: 5%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textoDescriptivoInicio{
+        color: $blanco;
+        text-align: center;
+    }
+}
     .productosOfertas{
         picture{
         @include hoverExpandir;
@@ -16,17 +43,24 @@ main{
     p{
         font-size: 85%;
         font-family: $letraTextos;
-        padding: 2px;
+        padding-bottom: 5%;
      }
     .titulo{
+        font-size: 34px;
+        background-color: $azul;
         text-align: center;
+        padding-top: 5px;
             }
     .subtitulo
     {
         font-family: $letraTitulos;
-        font-weight: bold;
         text-align: center;
         font-size: 95%;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $azul;
+        margin-top: 2%;
     }
     .formContacto{
         form{
@@ -36,4 +70,7 @@ main{
         font-size: 85%;
             }
         }
+    }
+    body, html{
+        overflow-x: hidden;
     }

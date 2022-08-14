@@ -7,6 +7,8 @@ body{
 {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -17,6 +19,9 @@ body{
   
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
@@ -25,12 +30,13 @@ body{
 @media (min-width:768px) 
 {
         
-    .cuerpo img{
-        @include mediasMedidasImg(200px,112px);
-
-
-    }
-    
+    .cuerpo { 
+         img{
+            @include mediasMedidasImg(200px,112px);
+        }
+        display: flex;
+        flex-direction: row;
+}
 }
 @media (min-width:1024px) 
 {
@@ -41,7 +47,8 @@ body{
         img{
             @include mediasMedidasImg(250px,140px);
         }
-
+        display: flex;
+     flex-direction: row;
     }
  
 }

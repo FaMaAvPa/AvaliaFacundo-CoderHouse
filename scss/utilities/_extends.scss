@@ -1,9 +1,8 @@
 main{
     h1{
-    font-weight: bold;
-    font-size: 18px;
     font-family: $letraTitulos;
-    padding: 5%;
+    color: $blanco;
+    
   } 
     h2{
         @extend h1;
