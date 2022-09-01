@@ -2,12 +2,12 @@
 /*'Poppins', sans-serif;*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@1,200&display=swap");
 /*'Open Sans', sans-serif;*/
-/*Paleta*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/*Estilos del header*/
 header .navbar {
   font-family: "Poppins", sans-serif;
   font-size: 95%; }
@@ -17,44 +17,15 @@ header .navbar {
     transform: scale(1.1);
     transition: all 500ms; }
 
-header .rosa {
-  background-color: #F72585; }
-
+/*Estilos del main*/
 main {
-  background-color: #480CA8; }
-  main .productosInicio .card {
-    width: 80%;
-    height: 60%; }
-  main .productosInicio .muestraInicio1 {
-    margin-left: 10%; }
-  main .productosInicio .muestraInicio3 {
-    margin-left: 10%; }
-  main .productosInicio .celesteClaro {
-    background-color: #4CC9F0; }
-  main .productosInicio picture:hover {
-    transform: scale(1.1);
-    transition: all 500ms; }
-  main .descripcion .textoDescriptivoInicio {
-    width: 50%;
-    margin-left: 20%;
-    background-color: #3F37C9;
-    margin-bottom: 5%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto; }
-  main .descripcion .textoDescriptivoInicio {
-    color: #FFFFFF;
-    text-align: center; }
-  main .productosOfertas picture:hover {
-    transform: scale(1.1);
-    transition: all 500ms; }
+ }
   main p {
     font-size: 85%;
     font-family: "Poppins", sans-serif;
     padding-bottom: 5%; }
   main .titulo {
     font-size: 34px;
-    background-color: #3F37C9;
     text-align: center;
     padding-top: 5px; }
   main .subtitulo {
@@ -64,8 +35,34 @@ main {
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #3F37C9;
     margin-top: 2%; }
+  main .productosInicio {
+    align-items: center; }
+    main .productosInicio .card {
+      height: 8rem; }
+      main .productosInicio .card img {
+        height: 100%; }
+    main .productosInicio .muestraInicio1, main .productosInicio .muestraInicio2, main .productosInicio .muestraInicio3, main .productosInicio .muestraInicio4 {
+      margin-left: 15%; }
+    main .productosInicio img:hover {
+      transform: scale(1.1);
+      transition: all 500ms; }
+  main .descripcion .textoDescriptivoInicio {
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; }
+  main .descripcion .textoDescriptivoInicio {
+    color: #FFFFFF;
+    text-align: center; }
+  main .productosOfertas {
+    align-items: center; }
+    main .productosOfertas .card {
+      margin: 5%; }
+      main .productosOfertas .card img {
+        width: 100%; }
   main .formContacto form {
     padding: 5%;
     width: 50%;
@@ -79,12 +76,29 @@ main h1, main h2 {
   font-family: "Open Sans", sans-serif;
   color: #FFFFFF; }
 
+/*Estilos del footer*/
 footer {
   padding-bottom: 0;
-  background-color: #4895EF; }
+  background-color: #282c2e;
+  width: 100%;
+  display: flex;
+  align-items: center; }
   footer p {
     font-family: "Poppins", sans-serif;
     font-size: 85%; }
+  footer h2 {
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF; }
+  footer .redesSociales {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px; }
+  footer .derechosAutor p {
+    color: #FFFFFF;
+    margin-top: 10%; }
 
 /*mobile first*/
 body {
@@ -94,27 +108,35 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  justify-content: center; }
 
+footer {
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center; }
+
+/*medias queries*/
 @media (min-width: 500px) {
   .cuerpo {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto;
+    justify-content: center; }
+  footer {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; } }
 
 @media (min-width: 768px) {
-  .cuerpo {
-    display: flex;
-    flex-direction: row; }
-    .cuerpo img {
-      width: 200px;
-      height: 112px; } }
+  .cuerpo img {
+    width: 200px;
+    height: 112px; } }
 
 @media (min-width: 1024px) {
-  .cuerpo {
-    display: flex;
-    flex-direction: row; }
-    .cuerpo img {
-      width: 250px;
-      height: 140px; } }
+  .cuerpo img {
+    width: 250px;
+    height: 140px; } }

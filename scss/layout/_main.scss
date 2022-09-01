@@ -1,45 +1,5 @@
-
+/*Estilos del main*/
 main{
-    background-color: $purpura;
-    .productosInicio{
-    .card{
-        width: 80%;
-        height: 60%;
-    }
-    .muestraInicio1{
-        margin-left: 10%;
-    }
-    .muestraInicio3{
-        margin-left: 10%;
-    }
-    .celesteClaro{
-        background-color: $celesteClaro;
-    }
-    picture{
-        @include hoverExpandir;
-            }
-
-        }
-    .descripcion{
-    .textoDescriptivoInicio{
-        width: 50%;
-        margin-left: 20%;
-        background-color: $azul;
-        margin-bottom: 5%;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .textoDescriptivoInicio{
-        color: $blanco;
-        text-align: center;
-    }
-}
-    .productosOfertas{
-        picture{
-        @include hoverExpandir;
-        }
-    }
     p{
         font-size: 85%;
         font-family: $letraTextos;
@@ -47,7 +7,6 @@ main{
      }
     .titulo{
         font-size: 34px;
-        background-color: $azul;
         text-align: center;
         padding-top: 5px;
             }
@@ -59,9 +18,50 @@ main{
         width: 20%;
         margin-left: auto;
         margin-right: auto;
-        background-color: $azul;
         margin-top: 2%;
     }
+    /*Main del index*/
+    .productosInicio{
+    align-items: center;
+    .card{
+        height: 8rem;
+        img{
+            height:100%;
+        }
+    }
+    .muestraInicio1, .muestraInicio2, .muestraInicio3, .muestraInicio4{
+        margin-left: 15%;
+    }
+
+    img{    
+        @include hoverExpandir;
+            }
+        }
+    .descripcion{
+    .textoDescriptivoInicio{
+        width: 50%;
+        margin-left: 20%;
+        margin-bottom: 5%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textoDescriptivoInicio{
+        color: $blanco;
+        text-align: center;
+    }
+}
+/*main de Ofertas*/
+    .productosOfertas{
+        align-items: center;
+        .card{
+            margin: 5%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
     .formContacto{
         form{
         padding: 5%;

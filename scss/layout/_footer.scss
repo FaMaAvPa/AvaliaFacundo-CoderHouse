@@ -1,8 +1,34 @@
+/*Estilos del footer*/
 footer{
     padding-bottom: 0;
-    background-color: $celesteOscuro;
+    background-color: $negro;
+    width: 100%;
+    display: flex;
+    align-items: center;
     p{
         font-family: $letraTextos;
         font-size: 85%;
      }
+    h2{
+        margin-left: auto;
+        margin-right: auto;
+        color: $blanco;
+    }
+    .redesSociales{  
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 10px;
+        img{
+            @include hoverExpandir;
+        }
+    }
+    .derechosAutor{
+        p{
+            color: $blanco; 
+            margin-top: 10%;
+        }
+    }
+
 }

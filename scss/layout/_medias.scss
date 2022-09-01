@@ -1,5 +1,4 @@
 /*mobile first*/
-
 body{
     margin-bottom: 10%;
 }
@@ -9,9 +8,16 @@ body{
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
+footer{
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+   }
 
-
+/*medias queries*/
 @media (min-width:500px) {
    
     .cuerpo
@@ -21,9 +27,14 @@ body{
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-
+    justify-content: center;
 }
-
+   footer{
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+   }
 
 }
 
@@ -34,8 +45,6 @@ body{
          img{
             @include mediasMedidasImg(200px,112px);
         }
-        display: flex;
-        flex-direction: row;
 }
 }
 @media (min-width:1024px) 
@@ -47,8 +56,7 @@ body{
         img{
             @include mediasMedidasImg(250px,140px);
         }
-        display: flex;
-     flex-direction: row;
+
     }
  
 }
